@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dices</title>
+    <link rel="icon" href="images/favicon.ico">
+  </head>
+
+  </head>
+  <body>
+  <h1 id="101"> Деньги надо? Играй Vavada!</h1>
+  <div id="cube"></div>
+  <script>
+    let number = Math.floor(Math.random() * 6)+1
+    document.getElementById("cube").innerHTML = '<h1>Работает</h1><img src="images/' + number + '.jpg">'
+      // Math.floor(Math.random() * (7 - 1))+1
+  </script>
+  </body>
+</html>
