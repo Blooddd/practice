@@ -8,13 +8,16 @@
   </head>
   <body>
     <h1>какой же мем будет тебя сопровождать сегодня?</h1>
-    <button onclick="alert('ur fate is about to be decided!');">
-      meme generate
-    </button>
-    <div id="meme"></div>
-    function generate() { let number = Math.floor(Math.random() * 14) + 1;
-    document.getElementById("meme").innerHTML = '
+    <!-- <button onclick="alert('ur fate is about to be decided!');"> -->
+    <button onclick="generate();">meme generate</button>
     <h3>этот!</h3>
-    <img src="memes/' + number + '.jpg" />'; }
+    <div id="meme"></div>
+    <script>
+      function generate() {
+        let number = Math.floor(Math.random() * 14) + 1;
+        document.getElementById("meme").innerHTML =
+          '<img src="memes/' + number + '.jpg" />';
+      }
+    </script>
   </body>
 </html>
